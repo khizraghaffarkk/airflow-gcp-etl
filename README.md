@@ -6,7 +6,8 @@ This project demonstrates how to build a scalable ETL pipeline using Airflow on 
 - **Airflow** orchestrates the workflow tasks (sensors, data load, transformations, views).  
 - **Google Cloud Storage (GCS)** stores the raw CSV files.  
 - **BigQuery** stores staging, transformed tables, and reporting views.  
-- **Looker Studio** (formerly Data Studio) consumes BigQuery views for visualization and reporting.  
+- **Looker Studio** (formerly Data Studio) consumes BigQuery views for visualization and reporting. 
+- **Kaggle Dataset:** The raw CSV can also be downloaded from Kaggle. 
 
 The DAG (`dag4.py`) performs the following tasks:  
 1. Checks if a CSV file exists in GCS.  
@@ -23,9 +24,8 @@ The DAG (`dag4.py`) performs the following tasks:
   - `staging_dataset`  
   - `transform_dataset`  
   - `processing_dataset`  
-- A GCS bucket containing your CSV file (`global_health_data.csv`).  
-- Service account with permissions for GCS and BigQuery operations.  
-
+- A GCS bucket containing your CSV file (`global_health_data.csv`) **or download it from Kaggle**:  
+  - Kaggle Dataset: [Global Health Statistics](https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics)  
 ---
 
 ## Project Structure
