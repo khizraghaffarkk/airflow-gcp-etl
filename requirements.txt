@@ -1,0 +1,11 @@
+apache-airflow==2.8.1
+apache-airflow-providers-google==10.13.1
+apache-airflow-providers-common-io==1.2.0
+apache-airflow-providers-common-sql==1.10.0
+pandas==2.1.4
+pandas-gbq==0.20.0
+google-cloud-storage==2.14.0
+google-cloud-bigquery==3.16.0
+google-auth==2.26.2
+pyarrow==14.0.2
+requests==2.31.0
