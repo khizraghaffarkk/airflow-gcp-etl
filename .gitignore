@@ -1,1 +1,5 @@
 global_health_data.csv
+global_health_data.csv
+.*lock*
+*.pyc
+__pycache__/
