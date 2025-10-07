@@ -145,10 +145,13 @@ Enable your DAG and trigger runs manually or let the scheduler run as per DAG sc
 Check Airflow processes
 ps -ef | grep airflow
 ```
+![Airflow Status](images/airflow_status.png)
+
 - View logs via Airflow UI or local log files in ~/airflow/logs/.
 
 **Airflow Graphical Data Processing**
-![Airflow Status](images/airflow_status.png)
+![Airflow DAG Graph](images/airflow_graph.png)
+
 ### DAG Workflow
 
 The DAG (`automatic_data_load_and_transformation`) contains the following tasks:
@@ -191,9 +194,11 @@ The DAG prepares data for Looker Studio dashboards that display:
 - Vaccination availability metrics
 - Trends over years
 
-**LockerStudio Report - Global Health Data Insights:**
-- This allows stakeholders to easily understand health trends and make data-driven decisions.
-![Airflow DAG Graph](images/airflow_graph.png)
+**LockerStudio Report - Global Health Data Insights:**  
+- This allows stakeholders to easily understand health trends and make data-driven decisions.  
+- Users can filter records in Looker Studio based on different parameters such as country, disease category, year, and vaccine availability.  
+- [View the full report (PDF)](report/Extracting_Insights.pdf)
+
 
 ### Importance of Airflow, GCP, and Looker Studio
 
