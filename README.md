@@ -38,15 +38,18 @@ etl_airflow/
 │   ├── hello_world_dag.py           # Sample/test DAG to verify Airflow setup
 │   └── processing_gcs_to_bq.py      # Script or DAG for loading GCS data to BigQuery
 │
-├── data/                             # Local dataset storage (should not be pushed to GitHub)
+├── data/                            # Local dataset storage (should not be pushed to GitHub)
 │   └── global_health_data.csv       # Raw CSV file (added to .gitignore)
 │
-├── Images/                      # Screenshots for documentation
-│   ├── airflow_graph.png             # DAG Graph view in Airflow UI
-│   └── airflow_status.png            # Airflow processes status (ps -ef | grep airflow)
+├── Images/                          # Screenshots for documentation
+│   ├── airflow_graph.png            # DAG Graph view in Airflow UI
+│   └── airflow_status.png           # Airflow processes status (ps -ef | grep airflow)
 │
-├── requirements.txt                  # Python dependencies for the project
-└── README.md                         # Project overview, setup instructions, and DAG explanation
+├── report/                          # Folder containing report files
+│   ├── Extracting_Insights.pdf      # PDF report showing insights and visualizations Looker Studio dashboards
+│
+├── requirements.txt                 # Python dependencies for the project
+└── README.md                        # Project overview, setup instructions, and DAG explanation
 ```
 
 ---
